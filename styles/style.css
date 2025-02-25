@@ -72,6 +72,20 @@ body {
   color: white;
 }
 
+.btn-secondary-style-reverse {
+  background: var(--btn-outline-color);
+  color: white;
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-weight: 450;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-secondary-style-reverse:hover {
+  border: 2px solid var(--btn-outline-color);
+  color: var(--btn-outline-color);
+}
+
 h3 {
   color: #53578a;
   font-size: 50px;
@@ -81,6 +95,43 @@ h3 {
 
 .project-description {
   padding: 120px 60px;
+}
+
+.project-titles {
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.about-section {
+  padding: 110px 60px;
+}
+
+.about-section-content {
+  padding: 30px;
+}
+
+.about-section h1 {
+  color: #53578a;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.about-section h2 {
+  color: #53578a;
+  opacity: 0.7;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-section p {
+  opacity: 0.8;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.profile-picture {
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
 }
 
 @media (max-width: 900px) {
@@ -96,9 +147,9 @@ h3 {
   .hero h1 {
     font-size: 60px;
   }
-}
 
-.project-titles {
-  font-weight: 900;
-  margin-bottom: 18px;
+  .about-section {
+    text-align: center;
+    padding: 0;
+  }
 }
