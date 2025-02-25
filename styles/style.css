@@ -1,5 +1,7 @@
 :root {
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --btn-primary-color: #dcd6f7;
+  --btn-outline-color: #ad62aa;
 }
 
 body {
@@ -41,8 +43,8 @@ body {
   font-size: 20px;
 }
 
-.contact-btn {
-  background: #dcd6f7;
+.btn-primary-style {
+  background: var(--btn-primary-color);
   color: #3e3f65;
   border-radius: 4px;
   padding: 15px 20px;
@@ -51,7 +53,51 @@ body {
   box-shadow: var(--box-shadow);
 }
 
-.contact-btn:hover {
+.btn-primary-style:hover {
   background: #dcd6f7;
   transform: scale(1.1);
+}
+
+.btn-secondary-style {
+  border: 2px solid var(--btn-outline-color);
+  color: var(--btn-outline-color);
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-weight: 450;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-secondary-style:hover {
+  background: var(--btn-outline-color);
+  color: white;
+}
+
+h3 {
+  color: #53578a;
+  font-size: 50px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 900px) {
+  .project-description {
+    padding: 20px 0;
+    text-align: center;
+  }
+  h3 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .hero h1 {
+    font-size: 60px;
+  }
+}
+
+.project-titles {
+  font-weight: 900;
 }
