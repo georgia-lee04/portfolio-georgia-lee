@@ -1,3 +1,57 @@
+:root {
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 body {
-  background: red;
+  font-family: "Roboto", serif;
+}
+
+.hero {
+  background: linear-gradient(
+    to top,
+    #505285 0%,
+    #585e92 12%,
+    #65689f 25%,
+    #7474b0 37%,
+    #7e7ebb 50%,
+    #8389c7 62%,
+    #9795d4 75%,
+    #a2a1dc 87%,
+    #b5aee4 100%
+  );
+  text-align: center;
+  padding: 110px 60px;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 96px;
+  color: white;
+  text-shadow: 1px 1px 2px orchid;
+}
+
+.hero h2 {
+  font-weight: 400;
+  color: white;
+}
+
+.hero p {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.contact-btn {
+  background: #dcd6f7;
+  color: #3e3f65;
+  border-radius: 4px;
+  padding: 15px 20px;
+  font-weight: 350;
+  transition: all 200ms ease-in-out;
+  box-shadow: var(--box-shadow);
+}
+
+.contact-btn:hover {
+  background: #dcd6f7;
+  transform: scale(1.1);
 }
