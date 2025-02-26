@@ -8,6 +8,37 @@ body {
   font-family: "Roboto", serif;
 }
 
+nav {
+  padding: 20px 0;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #3e3f65;
+  transition: all 200ms ease-in-out;
+}
+
+nav a:hover {
+  color: var(--btn-outline-color);
+  font-weight: 600;
+}
+
+.logo {
+  max-height: 40px;
+}
+
 .hero {
   background: linear-gradient(
     to top,
