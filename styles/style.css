@@ -170,6 +170,45 @@ nav a:hover {
   border-radius: 10px;
 }
 
+footer {
+  margin: 60px 0;
+}
+
+footer .contact-box {
+  background: var(--btn-primary-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: #3e3f65;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--btn-outline-color);
+}
+
+footer .social-links a {
+  margin: 0 20px;
+  color: #3e3f65;
+  background: var(--btn-primary-color);
+  padding: 10px 15px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: all 150ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: #3e3f65;
+}
+
 @media (max-width: 900px) {
   .project-description {
     padding: 20px 0;
