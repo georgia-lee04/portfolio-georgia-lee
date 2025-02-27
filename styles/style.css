@@ -30,13 +30,19 @@ nav a {
   transition: all 200ms ease-in-out;
 }
 
-nav a:hover {
+nav a:hover,
+nav li :active a {
   color: var(--btn-outline-color);
   font-weight: 600;
 }
 
 .logo {
   max-height: 40px;
+  transition: all 200ms ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .hero {
@@ -103,7 +109,8 @@ nav a:hover {
   color: white;
 }
 
-.btn-secondary-style-reverse {
+.btn-secondary-style-reverse,
+.contact-btn {
   background: var(--btn-outline-color);
   color: white;
   border-radius: 4px;
@@ -115,6 +122,13 @@ nav a:hover {
 .btn-secondary-style-reverse:hover {
   border: 2px solid var(--btn-outline-color);
   color: var(--btn-outline-color);
+}
+
+.contact-btn:hover {
+  transform: scale(1.1);
+  box-shadow: var(--box-shadow);
+  color: white;
+  background: var(--btn-outline-color);
 }
 
 .index-h3 {
@@ -190,7 +204,15 @@ footer .email-link {
   font-size: 24px;
 }
 
-footer .email-link:hover {
+footer .end-links {
+  text-decoration: none;
+  color: #3e3f65;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer .email-link:hover,
+footer .end-links:hover {
   color: var(--btn-outline-color);
 }
 
